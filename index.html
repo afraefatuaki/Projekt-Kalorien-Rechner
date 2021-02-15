@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calorie calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <h1>calorie calculator</h1>
+        <form action="/action_page.php">
+            <label for="quantity">Körpergröße:</label>
+            <input type="number" id="height" name="quantity"><br>
+
+            <label for="quantity">Alter:</label>
+            <input type="number" id="age" name="quantity"><br>
+
+            <label for="quantity">Gewicht:</label>
+            <input type="number" id="weight" name="quantity"><br>
+
+            <h3>Körperbau:</h3>
+            <input type="radio" name="colors" id="man" checked>Weiblich<br>
+            <input type="radio" name="colors" id="woman" checked>Männlich<br>
+
+            <label for="activities">Arbeits und Freizeitaktivität:</label>
+            <select name="activities" id="activities">
+                <option value="sleep">Schlafen</option>
+                <option value="sitting">Nur Sitzen oder Liegen</option>
+                <option value="easyWork">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität
+                    in der Freizeit, z.B. Büroarbeit</option>
+                <option value="simpleWork">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="middleWork">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                    Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="hardWork">Körperlich anstrengende berufliche Arbeit
+                </option>
+            </select>
+            <button type="button" onclick="countColories()">Calculate</button>
+            <p id="kcalGrundumsatz"></p>
+            <p id="kJGrundumsatz"></p>
+            <p id="kcalGesamtumsatz"></p>
+            <p id="kJGesamtumsatz"></p>
+        </form>
+
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
