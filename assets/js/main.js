@@ -38,9 +38,9 @@ function countColories() {
     let grundumsatzKJ = grundumsatz * 4.184
     let gesamtumsatzKJ = gesamtumsatz * 4.184
 
-    kcalGrundumsatz.innerHTML = grundumsatz.toFixed(2) + "Kcal"
-    kJGrundumsatz.innerHTML = grundumsatzKJ.toFixed(2) + "KJ"
-    kcalGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2) + "Kcal"
-    kJGesamtumsatz.innerHTML = gesamtumsatzKJ.toFixed(2) + "KJ"
+    kcalGrundumsatz.innerHTML = grundumsatz.toFixed(2) + " " + "Kcal"
+    kJGrundumsatz.innerHTML = grundumsatzKJ.toFixed(2) + " " + "KJ"
+    kcalGesamtumsatz.innerHTML = gesamtumsatz.toFixed(2) + " " + "Kcal"
+    kJGesamtumsatz.innerHTML = gesamtumsatzKJ.toFixed(2) + " " + "KJ"
 
 }
