@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&family=Vollkorn:wght@400;500&display=swap');
+/*font-family: 'Mulish', sans-serif;
+font-family: 'Vollkorn', serif;*/
+/* black: #201412
+orange: #DB5029
+peach: #EEB8A6
+red-brown: #7A2610
+orange: #FB3C01
+gray: #D9D9D9 
+black: #201B1B */
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 0px;
+    background-color: #161B21;
+    color: #ebebeb; 
+    
+}
+section{
+    display: flex;
+    justify-content: space-between;
+  
+}
+div:first-of-type{
+    flex: 0 0 50%;
+}
+div:last-of-type{
+    background-color:#FB3C01;
+    height: 100vh;
+}
+img{
+    margin-top: 15%;
+   height: 80vh
+}
+h1{
+    font-family: 'Vollkorn', serif;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    color: #EEB8A6 ;
+    font-size: 2.5rem;
+    margin: 10% 0 10% 20%;
+}
+label{
+    margin-left: 20%;
+    font-size: 1.2rem;
+}
+input:first-of-type, input:nth-of-type(2), input:nth-of-type(3){
+    background-color: #D9D9D9 ;
+    width: 10%;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin-left: 32.5%;
+    text-align: left;
+    
+}
+input:nth-of-type(2){
+    margin-left: 37.5%;
+}
+input:nth-of-type(3){
+    margin-left: 41.5%;
+}
+input[type="radio" i] {
+    background-color: #D9D9D9 ;
+    margin-left: 20%;
+}
+
+
+#activities{
+    background-color: #D9D9D9 ;
+    width: 300px;
+    margin-left: 20%;
+    padding: 5px 0;
+}
+label[for=activities]{
+    color:  #ebebeb44;
+    font-family: 'Vollkorn', serif;
+}
+
+form h3{
+    color:  #ebebeb44;
+    margin-left: 20%;
+    font-family: 'Vollkorn', serif;
+}
+.results{
+    display: flex;
+    justify-content: space-around
+}
+#kcalGrundumsatz, #kJGrundumsatz, #kcalGesamtumsatz, #kJGesamtumsatz{
+    margin-left: 25px;
+}
+button{
+    padding: 5px 30px; 
+    border-radius: 5px;
+    margin-left: 3%;
+    background-color: #f0a500;
+    color: #161B21; 
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+}
+span{
+  
+  display:block;
+  width:71%;
+  margin:5% 0 2% 15%;
+  border-top: 1px solid #EEB8A6;
+}
+article h3{
+    color: #ebebeb44;
+}

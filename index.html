@@ -11,42 +11,55 @@
 
 <body>
     <section>
+        <div>
 
-        <h1>calorie calculator</h1>
-        <form action="/action_page.php">
-            <label for="quantity">Körpergröße:</label>
-            <input type="number" id="height" name="quantity"><br>
+            <h1>Kalorien Rechner:</h1>
+            <form action="/action_page.php">
+                <label for="quantity">Körpergröße </label>
+                <input type="number" id="height" name="quantity" placeholder="cm"><br><br><br>
 
-            <label for="quantity">Alter:</label>
-            <input type="number" id="age" name="quantity"><br>
+                <label for="quantity">Gewicht </label>
+                <input type="number" id="weight" name="quantity" placeholder="Kg"><br><br><br>
 
-            <label for="quantity">Gewicht:</label>
-            <input type="number" id="weight" name="quantity"><br>
+                <label for="quantity">Alter </label>
+                <input type="number" id="age" name="quantity" placeholder="year"><br><br>
 
-            <h3>Körperbau:</h3>
-            <input type="radio" name="colors" id="man" checked>Weiblich<br>
-            <input type="radio" name="colors" id="woman" checked>Männlich<br>
+                <h3>Körperbau:</h3>
+                <input type="radio" name="colors" id="man" checked>Weiblich<br>
+                <input type="radio" name="colors" id="woman" checked>Männlich<br><br><br>
 
-            <label for="activities">Arbeits und Freizeitaktivität:</label>
-            <select name="activities" id="activities">
-                <option value="sleep">Schlafen</option>
-                <option value="sitting">Nur Sitzen oder Liegen</option>
-                <option value="easyWork">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität
-                    in der Freizeit, z.B. Büroarbeit</option>
-                <option value="simpleWork">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
-                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
-                <option value="middleWork">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
-                    Handwerker, Mechaniker, Hausfrauen</option>
-                <option value="hardWork">Körperlich anstrengende berufliche Arbeit
-                </option>
-            </select>
-            <button type="button" onclick="countColories()">Calculate</button>
-            <p id="kcalGrundumsatz"></p>
-            <p id="kJGrundumsatz"></p>
-            <p id="kcalGesamtumsatz"></p>
-            <p id="kJGesamtumsatz"></p>
-        </form>
+                <label for="activities">Arbeits und Freizeitaktivität:</label><br><br>
+                <select name="activities" id="activities">
+                    <option value="sleep">Schlafen</option>
+                    <option value="sitting">Nur Sitzen oder Liegen</option>
+                    <option value="easyWork">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                        Aktivität</option>
+                    <option value="simpleWork">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit.
+                    </option>
+                    <option value="middleWork">Überwiegend gehende oder stehende Tätigkeit</option>
+                    <option value="hardWork">Körperlich anstrengende berufliche Arbeit
+                    </option>
+                </select>
+                <button type="button" onclick="countColories()">Calculate</button><br><br>
+            </form>
+            <span></span>
+            <article class="results">
+                <article>
+                    <h3>Grundumsatz :</h3>
+                    <p id="kcalGrundumsatz">_ _ _ _ _Kcal</p>
+                    <p id="kJGrundumsatz">_ _ _ _ _kJ</p>
+                </article>
+                <article>
+                    <h3>Gesamtumsatz :</h3>
+                    <p id="kcalGesamtumsatz">_ _ _ _ _Kcal</p>
+                    <p id="kJGesamtumsatz">_ _ _ _ _KJ</p>
+                </article>
+            </article>
 
+        </div>
+        <div>
+            <img src="assets/img/Design ohne Titel.png" alt="Design" />
+        </div>
     </section>
     <script src="assets/js/main.js"></script>
 </body>
