@@ -99,6 +99,9 @@ button{
     font-family: 'Vollkorn', serif;
     font-weight: 500;
 }
+button:hover{
+    background-color: #cf7500;
+}
 span{
   
   display:block;
