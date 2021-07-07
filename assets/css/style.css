@@ -37,7 +37,7 @@ h1{
     word-spacing: 15px;
     color: #EEB8A6 ;
     font-size: 2.5rem;
-    margin: 6% 0 9% 20%;
+    margin: 5% 0 7% 20%;
 }
 label{
     margin-left: 20%;
@@ -45,12 +45,19 @@ label{
 }
 input:first-of-type, input:nth-of-type(2), input:nth-of-type(3){
     background-color: #D9D9D9 ;
+    border-color:#D9D9D9;
+    border-style: none;
     width: 10%;
     padding: 5px 0;
     border-radius: 5px;
     margin-left: 32.5%;
     text-align: left;
     
+}
+input:first-of-type:focus, input:nth-of-type(2):focus, input:nth-of-type(3):focus{
+    outline:none;
+    border: 1px solid #7A2610;
+    border-radius: 5px;
 }
 input:first-of-type::placeholder, input:nth-of-type(2)::placeholder, input:nth-of-type(3)::placeholder{
     text-align: right;
@@ -95,6 +102,8 @@ button{
     border-radius: 5px;
     margin-left: 3%;
     background-color: #f0a500;
+    border-color:#f0a500;
+    border-style: none;
     color: #161B21; 
     font-family: 'Vollkorn', serif;
     font-weight: 500;
